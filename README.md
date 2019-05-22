@@ -9,7 +9,7 @@ The system is GS-1 compliant, supports threshold-based triggers/alerts as well a
 
 Support is always handy support@lmis.gov.pk 
 
-# LMIS inventory management Systems (IMS)
+# LMIS Analytics Module (AM)
 The module is based on the summary data collected by LMIS. Dashboards in this module reflect actionable information at the several levels of stores and warehouse. At lower levels in the supply chain, the dashboards reflect actionable data with respect to the requisitioning processes, and monitoring of the status of reporting. In this module, the BI tool functionalities provide a good view into the data with great flexibility of data presentation and filters. The Executive Dashboard provides an immediate review of stock on hand in stores, product storage capacities, and stock issue and pipeline status. the dashboards/graphs and tabular have Monitoring and evaluation capabilities as well as at district and sub-district level with enriched analytical capability. <br>
 <img src='https://github.com/pakistanlmis/analytics/blob/master/public/images/analytics.png' width='300'>
 
