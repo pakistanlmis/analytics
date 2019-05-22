@@ -11,71 +11,32 @@ Support is always handy support@lmis.gov.pk
 
 # LMIS inventory management Systems (IMS)
 The module is based on the summary data collected by LMIS. Dashboards in this module reflect actionable information at the several levels of stores and warehouse. At lower levels in the supply chain, the dashboards reflect actionable data with respect to the requisitioning processes, and monitoring of the status of reporting. In this module, the BI tool functionalities provide a good view into the data with great flexibility of data presentation and filters. The Executive Dashboard provides an immediate review of stock on hand in stores, product storage capacities, and stock issue and pipeline status. the dashboards/graphs and tabular have Monitoring and evaluation capabilities as well as at district and sub-district level with enriched analytical capability. <br>
-<img src='https://github.com/pakistanlmis/analytics/blob/master/public/images/analytics.png' width='300'>
+<img src='https://github.com/pakistanlmis/analytics/public/images/analytics.png' width='300'>
 
 # Configuration details
 
-For database configuration. Change below lines in application/configs/application.ini
+/***************************** R E A D    M E ****************************/
 
-doctrine.db.driver = "pdo_mysql"
+For successfull running the module, kindly follow these steps:
 
-doctrine.db.host = "localhost"
+1.Go to file : /includes/classes/Configuration.inc.php , and set your directory name in  : $system_main_path .
 
-doctrine.db.user = "root"
+2. Restore this file on your mysql server : DB_RESTORE.sql
 
-doctrine.db.password = ""
+3.Go to file : /includes/classes/Configuration.inc.php , and set your DB credentials in following variables : 
+				$db_host 		= '';
+				$db_user 		= '';
+				$db_password 	= '';
+				$db_name 		= '';
+				
 
-doctrine.db.dbname = "vlmis"
+4. For using the analytics module  , please use the following credentials.
+				User	= guest
+				Pass	= 123
+				
+5. For better experience , use this analytics module with IM or Consumption Data Module.
 
-*******************************************************
-
-Database configuration for readonly server:
-
-doctrine_read.db.driver = "pdo_mysql"
-
-doctrine_read.db.host = "localhost"
-
-doctrine_read.db.user = "root"
-
-doctrine_read.db.password = ""
-
-doctrine_read.db.dbname = "vlmis"
-
-*******************************************************
-
-For SMTP configuration change these lines
-
-smtpConfig.host = ""
-
-smtpConfig.ssl = "ssl"
-
-smtpConfig.port = "465"
-
-smtpConfig.auth = ""
-
-smtpConfig.username = ""
-
-smtpConfig.password = ""
-
-smtpConfig.fromAddress = ""
-
-smtpConfig.fromName = ""
-
-smtpConfig.toAddress = ""
-
-smtpConfig.toName = ""
-
-smtpConfig.isSendMails = true
-
-*******************************************************
-
-For enable application errors use
-
-phpSettings.display_startup_errors = 1
-
-phpSettings.display_errors = 1
-
-resources.frontController.params.displayExceptions = 1
+/***************************** You Are Ready To Use ****************************/
 
 # Terms of Use
 The MIT License (MIT)
